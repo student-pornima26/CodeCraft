@@ -1,12 +1,10 @@
-// DFS algorithm in Java
-
 import java.util.*;
 
 class Graph {
     private LinkedList<Integer> adjLists[];
     private boolean visited[];
 
-    // Graph creation
+   
     Graph(int vertices) {
         adjLists = new LinkedList[vertices];
         visited = new boolean[vertices];
@@ -20,7 +18,7 @@ class Graph {
         adjLists[src].add(dest);
     }
 
-    // DFS algorithm
+   
     void DFS(int vertex) {
         visited[vertex] = true;
         System.out.print(vertex + " ");
